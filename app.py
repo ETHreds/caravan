@@ -1,11 +1,10 @@
-from flask import Flask
-from markupsafe import escape
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return f'Site  Construction'
+    return render_template('home.html')
 
 
 
