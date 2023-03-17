@@ -3,9 +3,9 @@ from markupsafe import escape
 
 app = Flask(__name__)
 
-@app.route('/<name>')
-def home(name):
-    return f'Site  Construction by {escape(name)}'
+@app.route('/')
+def home():
+    return f'Site  Construction'
 
 
 
